@@ -17,13 +17,19 @@
                     <label>Enabled</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                 </field>
-                <field id="enabled_on_list" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <field id="enabled_on_list" translate="label" type="select" sortOrder="20" showInDefault="1" showInWebsite="0" showInStore="0">
                     <label>Enabled On List</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <depends>
+                        <field id="enabled">1</field>
+                    </depends>
                 </field>
-                <field id="enabled_on_product_view" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <field id="enabled_on_product_view" translate="label" type="select" sortOrder="30" showInDefault="1" showInWebsite="0" showInStore="0">
                     <label>Enabled On Product View</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <depends>
+                        <field id="enabled">1</field>
+                    </depends>
                 </field>
             </group>
             <group id="badge_new" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="0" showInStore="0">
@@ -39,7 +45,7 @@
                     <label>Position Corner</label>
                     <source_model>Kuzman\ProductBadges\Model\System\Config\Source\Corners</source_model>
                 </field>
-                <field id="badge_image" type="image" sortOrder="40" showInDefault="1" showInWebsite="0" showInStore="0">
+                <field id="badge_image" translate="label" type="image" sortOrder="40" showInDefault="1" showInWebsite="0" showInStore="0">
                     <label>Badge Image</label>
                     <backend_model>Magento\Config\Model\Config\Backend\Image</backend_model>
                     <upload_dir config="system/filesystem/media" scope_info="1">kuzman/product_badges</upload_dir>

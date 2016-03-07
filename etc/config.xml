@@ -8,9 +8,9 @@
     <default>
         <productbadges>
             <general>
-                <enabled>1</enabled>
-                <enabled_on_list>1</enabled_on_list>
-                <enabled_on_product_view>1</enabled_on_product_view>
+                <enabled>0</enabled>
+                <enabled_on_list>0</enabled_on_list>
+                <enabled_on_product_view>0</enabled_on_product_view>
             </general>
             <badge_new>
                 <enabled>1</enabled>
